@@ -8,13 +8,13 @@
 ## Resolvendo Erros: 
 ### 1 - adicionando no projeto ou globalmente: [kotlin-stdlib.jar]()
 
-File -> Settings -> Build, Execution, Deployment -> Build Tools -> Maven
+* File -> Settings -> Build, Execution, Deployment -> Build Tools -> Maven
 Verifique se o "Maven home directory" está configurado corretamente
 
 
 Outra alternativa é ir em:
 
-File -> Project Structure -> Libraries (no menu da esquerda)
+* File -> Project Structure -> Libraries (no menu da esquerda)
 Clique no "+"
 Escolha "Java" ou "Kotlin"
 Navegue até a pasta de instalação do IntelliJ
@@ -23,7 +23,7 @@ Selecione o arquivo kotlin-stdlib.jar
 
 Configurar como Global Library no IntelliJ:
 
-File -> Project Structure
+* File -> Project Structure
 No menu esquerdo, vá em Platform Settings -> Global Libraries
 Clique no "+" e escolha "Java"
 Navegue até a pasta do Kotlin no IntelliJ: plugins/Kotlin/kotlinc/lib
@@ -33,7 +33,7 @@ Agora esta biblioteca estará disponível para todos os projetos
 
 Configurar o plugin do Kotlin no IntelliJ:
 
-File -> Settings (ou Preferences no Mac)
+* File -> Settings (ou Preferences no Mac)
 Plugins
 Procure por "Kotlin"
 Certifique-se que o plugin está instalado e atualizado
@@ -65,11 +65,14 @@ O Kotlin será incluído automaticamente nas novas versões
 Você não precisará mais atualizar o plugin do Kotlin separadamente
 Cada versão principal do IntelliJ IDEA virá com a versão estável mais recente do Kotlin
 
-A opção "Enable K2 mode" está marcada, o que é bom porque:
+Note que ativar o K2 mode requer reiniciar o IDE (como indicado pelo "Requires restart" na imagem).
 
+* File -> Settings (ou Preferences no Mac)
+Languages & Frameworks
+Procure por "Kotlin"
+Certifique-se que Enable K2 Mode está marcado, caso contrário, deixe selecionado.
+A opção "Enable K2 mode" está marcada, o que é bom porque:
 Você terá acesso às últimas melhorias do compilador
 Melhor performance na compilação
 Melhor análise de código
 Mais estabilidade
-
-Note que ativar o K2 mode requer reiniciar o IDE (como indicado pelo "Requires restart" na imagem).
